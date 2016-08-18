@@ -7,3 +7,16 @@
   padding-top: 0;
   margin-top: 0;
 }
+
+.bs-slider {
+  background-color: #616161;
+  margin-top: -20px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.bs-slider a {
+  color: 
+}
