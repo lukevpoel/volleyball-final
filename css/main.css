@@ -18,5 +18,79 @@
 }
 
 .bs-slider a {
-  color: 
+  color: yellow;
+}
+
+.footer {
+  height: 60px;
+}
+
+.calendar {
+  background-color: rgba(255,255,0,.4);
+}
+
+#first-cal {
+  margin: 0 auto;
+}
+
+#pc-first-cal-desc {
+  float: right;
+  height: 400px;
+  width: 600px;
+}
+
+#pc-first-cal-img {
+  float: left;
+  height: 400px;
+  width: 600px;
+}
+
+#second-cal {
+  float: left;
+  height: 400px;
+  width: 600px;
+}
+
+#third-cal {
+  float: right;
+  height: 400px;
+  width: 600px;
+}
+
+#mapid {
+  width: 100%;
+  height:30em;
+  margin-top: 15px;
+  padding-left: -15px;
+  padding-right: -15px;
+}
+
+.map-container {
+  background-color: rgba(0,255,0,.4);
+  padding-bottom: 15px;
+}
+
+.cal-border {
+  border: 15px red;
+}
+
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(255,0,0,.0001) 0,rgba(255,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(255,0,0,.0001) 0,rgba(255,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,0,0,.0001)),to(rgba(255,0,0,.5)));
+    background-image: linear-gradient(to right,rgba(255,0,0,.0001) 0,rgba(255,0,0,.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(255,0,0,.5) 0,rgba(255,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(255,0,0,.5) 0,rgba(255,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(255,0,0,.5)),to(rgba(255,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(255,0,0,.5) 0,rgba(255,0,0,.0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
 }

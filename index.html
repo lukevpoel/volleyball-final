@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
+  <title>Puget Sound Volleyball</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -88,13 +89,44 @@
 </div>
 
 
-<div class="container">
-  <h3>Collapsible Navbar</h3>
-  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+<div class="container-fluid calendar">
+  <h3>Calendar Events</h3>
+  <div class="row cal-border">
+    <div class="hidden-md hidden-lg hidden-xl col-xs-12" id="mobile-first-cal"><img src="media/img/beach-ball-men.jpg" class="img-responsive" alt="beach ball picture">
+    </div>
+    <div class="hidden-xs hidden-sm"id="first-cal">
+      <div class="col-xs-6 pc-first-cal" id="pc-first-cal-img"><img src="media/img/beach-ball-men.jpg" class="img-responsive" alt="beach ball picture">
+      </div>
+      <div class="col-xs-6 pc-first-cal" id="pc-first-cal-desc">
+        <h3>Gig Harbor Doubles Tournament</h3>
+        <p>Format is the Famous Gig Harbor Ladder System: win and you move up a
+          court, lose and move down a court...either way you play against partner
+          in next game. KOB-style elimination for playoffs to determine male and
+          female champions in the afternoon.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="row cal-border">
+      <div class="col-md-6" id="second-cal">
+        <img src="media/img/bump.jpg" class="img-responsive" alt="volleyball bump">
+      </div>
+      <div class="col-md-6" id="third-cal">
+        <img src="media\img\womens-volleyball-qualified.jpg" class="img-responsive" alt="Rio 2016 Women's Volleyball team">
+      </div>
+    </div>
 </div>
+<div class="container-fluid map-container" id="map">
+  <h3>Map of Nearby Events</h3>
+  <div id="mapid">
+  </div>
+
+</div>
+<footer class="footer">
+</footer>
 
 </body>
+ <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
