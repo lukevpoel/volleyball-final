@@ -2,10 +2,16 @@ $( document ).ready(function(){
 
   //start to pull JSON to fill the events parts
   $.getJSON("js/events.json", function ( data ) {
-    document.getElementById('pc-first-cal-title').innerHTML = data[0].title;
-    document.getElementById('mob-first-cal-title').innerHTML = data[0].title;
-    document.getElementById('second-cal-title').innerHTML = data[1].title;
-    document.getElementById('third-cal-title').innerHTML = data[2].title;
+    $( ".first-cal-title").html(data[0].title);
+    $( ".first-cal-desc" ).html(data[0].description);
+    $( ".first-cal-img" ).attr("src", data[0].image);
+    $( '#second-cal-title').html(data[1].title);
+    $( "#second-cal-desc" ).html(data[1].description);
+    $( "#second-cal-img" ).attr("src", data[1].image);
+    $( '#third-cal-title').html(data[2].title);
+    $( "#third-cal-desc" ).html(data[2].description);
+    $( "#third-cal-img" ).attr("src", data[2].image);
+
 
     //check to see if data is being pulled
     console.log( data[0].title );

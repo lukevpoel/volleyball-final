@@ -92,27 +92,37 @@
 <div class="container-fluid calendar">
   <h3>Calendar Events</h3>
   <div class="row cal-border">
+    <!-- 1st event class hidden and only shown for mobile devices -->
     <div class="hidden-md hidden-lg hidden-xl col-xs-12" id="mobile-first-cal">
-      <h3 id="mob-first-cal-title"><a href="http://final3030.lvpoel.me">First Calendar title</a></h3>
+      <h3 class="first-cal-title"><a href="http://final3030.lvpoel.me">First Calendar title</a></h3>
       <p class="first-cal-desc">First Calendar Description</p>
+      <img class="first-cal-img" src="" alt="first calendar event image">
     </div>
+
+    <!-- 1st event class hidden for mobile devices and shows for pcs -->
     <div class="hidden-xs hidden-sm"id="first-cal">
-      <div class="col-xs-6 pc-first-cal" id="pc-first-cal-img"><img src="media/img/beach-ball-men.jpg" class="img-responsive" alt="beach ball picture">
+      <div class="col-xs-6 pc-first-cal" id="pc-first-cal-img"><img class="first-cal-img" src="" alt="first calendar event image">
       </div>
       <div class="col-xs-6 pc-first-cal" id="pc-first-cal-text">
-        <h3 id="pc-first-cal-title"><a href="http://final3030.lvpoel.me">First Calendar title</a></h3>
+        <h3 class="first-cal-title"><a href="http://final3030.lvpoel.me">First Calendar title</a></h3>
         <p class="first-cal-desc">First Calendar Description</p>
       </div>
     </div>
   </div>
     <div class="row cal-border">
+
+      <!-- second event -->
       <div class="col-md-6" id="second-cal">
         <h3 id="second-cal-title"><a href="http://final3030.lvpoel.me">Second Calendar title</a></h3>
         <p id="second-cal-desc">Second Calendar Description</p>
+        <img id="second-cal-img" src="" alt="second calendar event image">
       </div>
+
+      <!-- third event -->
       <div class="col-md-6" id="third-cal">
         <h3 id="third-cal-title"><a href="http://final3030.lvpoel.me">Third Calendar title</a></h3>
         <p id="third-cal-desc">Third Calendar Description</p>
+        <img id="third-cal-img" src="" alt="third calendar event image">
       </div>
     </div>
 </div>
